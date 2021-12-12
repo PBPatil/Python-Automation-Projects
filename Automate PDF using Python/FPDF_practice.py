@@ -26,7 +26,7 @@ class PDF(FPDF):
         #Page number
         self.cell(0,10,f"Page {self.page_no()}/{{nb}}",align="C")
         
-        
+   
       
         
         
