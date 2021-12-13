@@ -45,7 +45,7 @@ pdf.alias_nb_pages()
 pdf.add_page()
 
 #Specify font
-''' available fonts - 'times','courier',"helvetica","symbol","Arial"
+''' available fonts - 'times','courier',"helvetica","Arial"
     next argument it can take - Bold ("B") ,Underline ("U"), Italics ("I") ,regular(""),combination ex.("BU") '''
 
 pdf.set_font("courier","B",16)
