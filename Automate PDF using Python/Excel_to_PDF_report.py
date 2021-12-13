@@ -8,7 +8,7 @@ from fpdf import FPDF
 
 
 # Reading input files
-path = r'C:\Users\papr8016\Desktop\Football Clubs\England\Premier League'
+path = r'C:\Users\Desktop\Football Clubs\England\Premier League'
 Input_path = path+"\Arsenal.xlsx"
 df = pd.read_excel(Input_path, sheet_name='Data')
 
