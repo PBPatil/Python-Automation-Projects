@@ -6,18 +6,14 @@ import pandas as pd
 import numpy as np
 from fpdf import FPDF
 
-
-
 # Reading input files
 path = r'C:\Users\papr8016\Desktop\Football Clubs\England\Premier League'
 Input_path = path+"\Arsenal.xlsx"
 df = pd.read_excel(Input_path, sheet_name='Data')
 
-
 # Creating variables
 nickname = df['Nickname'].iloc[0]
 history = df['History'].iloc[0]
-coach = df['Current Manager'].iloc[0]
 cabinet = df['Cabinet'].iloc[0]
 ground = df['Stadium'].iloc[0]
 motto = df['Club Motto'].iloc[0]
