@@ -9,7 +9,7 @@ from fpdf import FPDF
 
 
 # Reading input files
-path = r'C:\Users\Desktop\Football Clubs\England\Premier League'
+path = r'C:\Users\papr8016\Desktop\Football Clubs\England\Premier League'
 Input_path = path+"\Arsenal.xlsx"
 df = pd.read_excel(Input_path, sheet_name='Data')
 
@@ -68,10 +68,24 @@ pdf.multi_cell(190, 5, txt= cabinet, ln=1, align="L")
 pdf.image(path + '/arsenal_logo.jpg', x=124, y=58, w=80)
 
 # Club's Latin Motto 
-pdf.set_text_color(255,255,255)
-pdf.set_font("Arial", size=12, style='BI')
-pdf.set_xy(137,130)
+pdf.set_text_color(220,220,220)
+pdf.set_font("Arial", size=14, style='B')
+pdf.set_xy(130,130)
 pdf.cell(130, 10, txt= motto, ln=1, align="L")
+
+# Inserting Text
+pdf.set_text_color(0,0,0)
+pdf.set_font("Arial", size= 10.9)
+pdf.set_xy(145,135)
+pdf.cell(130, 10, txt= "Coach:", ln=1, align="L")
+
+# Adding Manager's Name
+
+pdf.set_text_color(0,0,150)
+pdf.set_font("Arial", size=10.9, style='B')
+pdf.set_xy(158,135)
+pdf.cell(130, 10, txt= gaffer, ln=1, align="L")
+
 
 # Inserting stadium Picture
 pdf.image(path + '/Emirates.jpg', x=10, y=184,w=190)
