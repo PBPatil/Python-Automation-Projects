@@ -46,7 +46,6 @@ pdf.set_xy(12,64)
 pdf.cell(55, 10, txt='CLUB HISTORY', ln=1, align="L",fill=True)
 
 # Text box of brief history
-pdf.set_fill_color(255,255,255)
 pdf.set_text_color(0,0,0)
 pdf.set_font("Arial", size=10.9, style="B")
 pdf.set_xy(12,76)
@@ -60,7 +59,6 @@ pdf.set_xy(12,153)
 pdf.cell(65, 10, txt='TROPHY CABINET', ln=1, align="L",fill=True)
 
 # Text box of trophies won 
-pdf.set_fill_color(255,255,255)
 pdf.set_text_color(0,0,0)
 pdf.set_font("Arial", size=10.9, style="B")
 pdf.set_xy(12,165)
@@ -70,7 +68,6 @@ pdf.multi_cell(190, 5, txt= cabinet, ln=1, align="L")
 pdf.image(path + '/arsenal_logo.jpg', x=124, y=58, w=80)
 
 # Club's Latin Motto 
-pdf.set_fill_color(255,255,255)
 pdf.set_text_color(255,255,255)
 pdf.set_font("Arial", size=12, style='BI')
 pdf.set_xy(137,130)
