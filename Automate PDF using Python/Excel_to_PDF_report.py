@@ -7,7 +7,7 @@ import numpy as np
 from fpdf import FPDF
 
 # Reading input files
-path = r'C:\Users\papr8016\Desktop\Football Clubs\England\Premier League'
+path = r'C:\Desktop\Football Clubs\England\Premier League'
 Input_path = path+"\Arsenal.xlsx"
 df = pd.read_excel(Input_path, sheet_name='Data')
 
@@ -45,7 +45,7 @@ pdf.cell(55, 10, txt='CLUB HISTORY', ln=1, align="L",fill=True)
 pdf.set_text_color(0,0,0)
 pdf.set_font("Arial", size=10.9, style="B")
 pdf.set_xy(12,76)
-pdf.multi_cell(120, 5, txt= history, ln=1, align="L")
+pdf.multi_cell(120, 5, txt= history, ln=1, align="J")
 
 # Text box of header
 pdf.set_fill_color(0,0,150)
@@ -58,7 +58,7 @@ pdf.cell(65, 10, txt='TROPHY CABINET', ln=1, align="L",fill=True)
 pdf.set_text_color(0,0,0)
 pdf.set_font("Arial", size=10.9, style="B")
 pdf.set_xy(12,165)
-pdf.multi_cell(190, 5, txt= cabinet, ln=1, align="L")
+pdf.multi_cell(190, 5, txt= cabinet, ln=1, align="J")
 
 # Club's Crest Image
 pdf.image(path + '/arsenal_logo.jpg', x=124, y=58, w=80)
